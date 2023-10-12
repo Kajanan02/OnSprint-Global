@@ -1,0 +1,62 @@
+$theme-colors: (
+        "primary": #0044ff,
+        "light": #f4f7ff,
+        "danger": #ff4136
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.mt-6{
+    margin-top: ($spacer * 7.5) !important ;
+}
+
+.mb-6{
+    margin-bottom: ($spacer * 7.5) !important ;
+}
+
+.my-6{
+    margin-top: ($spacer * 7.5) !important ;
+    margin-bottom: ($spacer * 7.5) !important ;
+}
+
+.pt-6{
+    padding-top: ($spacer * 7.5) !important ;
+}
+
+.pb-6{
+    padding-bottom: ($spacer * 7.5) !important ;
+}
+
+.py-6{
+    padding-top: ($spacer * 7.5) !important ;
+    padding-bottom: ($spacer * 7.5) !important ;
+}
+
+@media (max-width:768px) {
+    .mt-6{
+        margin-top: ($spacer * 4) !important ;
+    }
+    
+    .mb-6{
+        margin-bottom: ($spacer * 4) !important ;
+    }
+    
+    .my-6{
+        margin-top: ($spacer * 4) !important ;
+        margin-bottom: ($spacer * 4) !important ;
+    }
+
+    .pt-6{
+        padding-top: ($spacer * 4) !important ;
+    }
+    
+    .pb-6{
+        padding-bottom: ($spacer * 4) !important ;
+    }
+    
+    .py-6{
+        padding-top: ($spacer * 3.5) !important ;
+        padding-bottom: ($spacer * 3.5) !important ;
+    }
+    
+}
