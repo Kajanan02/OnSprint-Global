@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Header(props) {
     return (
         <header>
-            <div className="container-fluid col-10 col-md-9 col-xl-8 p-0 mt-2 mt-md-4 align-items-center">
+            <div className="container-fluid col-10 col-md-9 col-xl-8 p-0 mt-0 mt-md-4 align-items-center">
                 <Row className="justify-content-between align-items-center gap-md-0 gap-2">
                     <Col md={12}>
                         <p className="mb-3 header-parah">Who We Are</p>
