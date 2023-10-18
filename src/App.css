@@ -14,7 +14,8 @@ body {
 }
 
 p,
-li {
+li,
+.accordion-body {
   font-family: "DM Sans", sans-serif;
   color: #9298a7;
 }
@@ -102,6 +103,11 @@ header {
   height: calc(100vh - 146px);
   display: flex;
   align-items: center;
+  /* background-color: #ffffff;
+  background-image: radial-gradient(#0044ff2d 0.75px, transparent 0.75px),
+    radial-gradient(#0044ff2d 0.75px, #ffffff 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px; */
 }
 
 .card-body {
@@ -161,6 +167,14 @@ header {
   );
 }
 
+.stage-img {
+  max-width: 100px !important;
+}
+
+.stages {
+  box-shadow: #0044ff25 0px 48px 100px 0px;
+}
+
 .conform {
   box-shadow: #0044ff25 0px 48px 100px 0px;
 }
@@ -172,6 +186,36 @@ header {
     /* border-radius: 32px; */
     margin-left: 0px;
   }
+}
+
+.accordion-button:not(.collapsed) {
+  color: aliceblue !important;
+  background-color: #0044ff;
+}
+
+.accordion-item {
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+button:not(.collapsed) {
+  border: 0 !important;
+  border-color: none !important;
+}
+
+.faq {
+  max-width: 1200px !important;
+  margin: auto;
+}
+
+.faq-bar {
+  box-shadow: #0044ff25 0px 48px 100px 0px;
+}
+
+.accordion-button {
+  padding: 1.25em 1.5em;
 }
 
 .footer a {
