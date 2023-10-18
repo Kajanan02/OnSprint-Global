@@ -4,9 +4,8 @@ import {Link} from "react-router-dom";
 
 function CtaBanner(props) {
     return (
-        <div className="cta-banner">
-            <div
-                className="container-fluid col-10 col-md-9 col-xl-8 p-0 align-items-center my-6">
+        <div className="container align-items-center my-6">
+            <div className={"p-3 p-xl-1"}>
                 <Row
                     className="bg-primary px-4 py-5 text-start justify-content-between align-items-center rounded-5 ">
                     <Col md={9} className="mb-md-0 mb-3 footer-top-text">
