@@ -1,17 +1,17 @@
 import React from "react";
-import { qns } from "../../utils/content";
-import { faqprops } from "./faqProps";
+import { faq } from "../../utils/content";
+import Faqprops from "./faqProps";
 import { Col } from "react-bootstrap";
 
-function faq(props) {
+function Faq(props) {
   return (
     <>
       <div className="faq">
-        <div className="container-fluid col-10 col-md-9 col-xl-8 px-0 py-6 align-items-center">
-          <h2>Frequenly Asked Questions</h2>
-          {qns.map((data, index) => (
-            <Col key={index}>
-              <faqprops data={data} />
+        <div className="container-fluid col-10 col-md-9 col-xl-8 px-0 py-5 align-items-center">
+          <h2 className="text-center mb-md-5 mb-3">Frequenly Asked Questions</h2>
+          {faq.map((data, index) => (
+            <Col key={index} className="gap-1 faq-bar">
+              <Faqprops data={data} />
             </Col>
           ))}
         </div>
@@ -20,4 +20,4 @@ function faq(props) {
   );
 }
 
-export default faq;
+export default Faq;

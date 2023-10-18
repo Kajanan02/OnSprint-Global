@@ -1,7 +1,7 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
 
-export function faqProps(props) {
+function FaqProps(props) {
   const { question, answer } = props.data;
   return (
     <>
@@ -15,4 +15,4 @@ export function faqProps(props) {
   );
 }
 
-export default faqProps;
+export default FaqProps;

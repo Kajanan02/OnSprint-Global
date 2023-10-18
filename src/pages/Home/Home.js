@@ -5,7 +5,7 @@ import whoWeAre from "../../assets/web-31.png";
 import Header from "./header";
 import CtaBanner from "./cta-banner";
 import ServicesHome from "./services-home";
-import FAQ from "./faq"
+import Faq from "./faq"
 
 function Home() {
   return (
@@ -53,7 +53,7 @@ function Home() {
         </div>
       </div>
       <ServicesHome />
-      <FAQ/>
+      <Faq/>
       <CtaBanner />
     </>
   );
