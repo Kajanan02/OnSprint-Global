@@ -20,7 +20,7 @@ function WebDevelopment(props) {
                 </div>
 
                 <div className={"py-xl-5 my-xl-5 pb-5"}>
-                    <div className={"row px-5"}>
+                    <div className={"row px-xl-5"}>
                         <div className={"col-md-6 pb-5"}>
                             <img src={serviceBanner} alt={"serviceBanner"} className={"w-100"}/>
                         </div>
