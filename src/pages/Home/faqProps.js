@@ -5,7 +5,7 @@ function FaqProps(props) {
     const {question, answer} = props.data;
     return (
         <>
-            <Accordion defaultActiveKey="0">
+            <Accordion>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>{question}</Accordion.Header>
                     <Accordion.Body>{answer}</Accordion.Body>
