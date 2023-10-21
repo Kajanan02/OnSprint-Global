@@ -1,17 +1,23 @@
 import React from "react";
-import {Col, Form, Row} from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
+import Banner from "../../components/banner";
 
 function Contact() {
-    return (
-        <>
-            <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
-                <Row className="py-6 justify-content-between align-items-center">
-                    <Col xl={4} md={4} sm={12}>
-                        <h3 class="mb-4 mt-4">Contact US</h3>
-                        <p class="mb-2 ">
-                            Contrary to popular belief, Lorem Ipsum is not simply random text.
-                            It has roots in a piece of classical
-                        </p>
+  return (
+    <>
+      <Banner
+        className={"banner-head"}
+        title={"Contact Page"}
+        txt={"Any information call to OnSprint Global"}
+      />
+      <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
+        <Row className="py-6 justify-content-between align-items-center">
+          <Col xl={4} md={4} sm={12}>
+            <h3 class="mb-4 mt-4">Contact US</h3>
+            <p class="mb-2 ">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical
+            </p>
 
                         <div class="con-detail mt-4">
                             <div class="d-flex gap-2">

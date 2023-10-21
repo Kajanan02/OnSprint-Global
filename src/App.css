@@ -59,9 +59,9 @@ li,
 }
 
 @media (max-width: 768px) {
-    .navbar-nav {
-        margin-right: 2em;
-    }
+  .navbar-nav {
+    margin-right: 2em;
+  }
 
     .navbar-nav .btn {
         font-size: 21px !important;
@@ -82,9 +82,8 @@ li,
 }
 
 .header-parah {
-    font-size: 1.35rem !important;
-    font-weight: 500;
-    max-width: 1000px !important;
+  font-weight: 500;
+  max-width: 500px !important;
 }
 
 .header-btn {
@@ -99,14 +98,9 @@ li,
 } */
 
 header {
-    height: calc(100vh - 146px);
-    display: flex;
-    align-items: center;
-    /* background-color: #ffffff;
-    background-image: radial-gradient(#0044ff2d 0.75px, transparent 0.75px),
-      radial-gradient(#0044ff2d 0.75px, #ffffff 0.75px);
-    background-size: 30px 30px;
-    background-position: 0 0, 15px 15px; */
+  height: calc(100vh - 146px);
+  display: flex;
+  align-items: center;
 }
 
 .card-body {
@@ -114,17 +108,18 @@ header {
 }
 
 @media (max-width: 768px) {
-    .who-we-are {
-        margin-bottom: 2em !important;
-    }
+  .who-we-are {
+    margin-bottom: 2em !important;
+  }
 
-    .header-parah {
-        font-size: 1.1rem !important;
-    }
+  .header-parah {
+    font-size: 1.1rem !important;
+  }
 
-    header {
-        margin-bottom: 5em;
-    }
+  header {
+    margin-bottom: 2em;
+    height: auto;
+  }
 
     .card-body {
         min-height: 250px !important;
@@ -145,34 +140,41 @@ header {
 }
 
 .service-card p {
-    font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 .footer-top-text p {
     max-width: 500px !important;
 }
 
-.about-sec-head {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(1, 7, 23);
-    background: linear-gradient(
-            135deg,
-            rgba(1, 7, 23, 1) 0%,
-            rgba(7, 39, 126, 1) 50%,
-            rgba(0, 68, 255, 1) 100%
-    );
+.banner-head {
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(
+      135deg,
+      rgb(1, 9, 27, 0.9) 0%,
+      rgba(2, 22, 73, 0.7) 40%,
+      rgba(3, 36, 128, 0.4) 70%,
+      rgba(0, 68, 255, 0) 100%
+    ),
+    url("../src/assets/about-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text {
+  margin-bottom: 2em;
 }
 
 .stage-img {
-    max-width: 100px !important;
+  max-width: 60px !important;
 }
 
-.stages {
-    box-shadow: #0044ff25 0px 48px 100px 0px;
+.work-type {
+  max-width: 250px !important;
 }
 
 .conform {
@@ -189,20 +191,25 @@ header {
 }
 
 .accordion-button:not(.collapsed) {
-    color: aliceblue !important;
-    background-color: #0044ff;
+  color: white !important;
+  background-color: #0044ff;
 }
 
 .accordion-item {
-    border: 0 !important;
-    box-shadow: none !important;
-    border-radius: 1em !important;
-    margin-bottom: 1em !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 1.5em !important;
+  margin-bottom: 1.25em !important;
 }
 
 button:not(.collapsed) {
     border: 0 !important;
     border-color: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: none !important;
 }
 
 .faq {
@@ -228,70 +235,59 @@ button:not(.collapsed) {
 }
 
 .services-card {
-    border-radius: 12px;
-    background: rgba(17, 68, 255, 0.06);
-    padding: 24px;
-    margin: 12px;
+  border-radius: 12px;
+  background-color: #0044ff05;
+  padding: 24px;
+  margin: 12px;
 }
 
 .service-card-heading {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .service-card-para {
-    color: #9298A9;
-    margin-bottom: 12px;
-
+  color: #9298a9;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 
 .service-card-more-details {
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .service-content-text {
-    color: #9298A9;
-    font-size: 16px;
+  color: #9298a9;
 }
 
 .service-content-heading {
-    font-size: 32px;
-    color: #202020;
-    font-weight: 700;
+  font-size: 32px;
+  color: #202020;
+  font-weight: 700;
 }
 
 .develop-process-heading {
-    font-size: calc(36px + 4 * ((100vw - 576px) / 1024));
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    padding: 12px;
+  text-align: center;
+  font-weight: 700;
+  padding: 12px;
 }
 
 .develop-process-step {
-    font-size: 1.05em;
-    color: white;
-    font-weight: 600;
+  font-size: 1.05em;
+  font-weight: 600;
 }
 
 .develop-process-step-heading {
-    font-size: calc(36px + 4 * ((100vw - 576px) / 1024));
-    color: white;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.develop-process-step-para {
-    color: white;
-    font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .technology-card {
-    height: 160px;
-    width: 160px;
-    background-color: white;
-    margin: 20px;
+  height: 160px;
+  width: 160px;
+  margin: 20px;
+  background-color: #0044ff25;
 }

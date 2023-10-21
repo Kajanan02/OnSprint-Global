@@ -6,22 +6,34 @@ $theme-colors: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// .h1{
+//   font-weight: 700 !important;
+// }
+
+// .h2{
+//   font-weight: 600 !important;
+// }
+
 .mt-6 {
   margin-top: ($spacer * 7.5) !important;
 }
 
+
 .mb-6 {
   margin-bottom: ($spacer * 7.5) !important;
 }
+
 
 .my-6 {
   margin-top: ($spacer * 7.5) !important;
   margin-bottom: ($spacer * 7.5) !important;
 }
 
+
 .pt-6 {
   padding-top: ($spacer * 7.5) !important;
 }
+
 
 .pb-6 {
   padding-bottom: ($spacer * 7.5) !important;
@@ -31,6 +43,12 @@ $theme-colors: (
   padding-top: ($spacer * 7.5) !important;
   padding-bottom: ($spacer * 7.5) !important;
 }
+
+.px-6 {
+  padding-left: ($spacer * 7.5) !important;
+  padding-right: ($spacer * 7.5) !important;
+}
+
 
 @media (max-width: 768px) {
   .mt-6 {
@@ -57,6 +75,11 @@ $theme-colors: (
   .py-6 {
     padding-top: ($spacer * 3.5) !important;
     padding-bottom: ($spacer * 3.5) !important;
+  }
+
+  .px-6 {
+    padding-left: ($spacer * 3.5) !important;
+    padding-right: ($spacer * 3.5) !important;
   }
 
 }

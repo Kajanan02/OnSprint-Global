@@ -10,7 +10,7 @@ function WebDevelopment(props) {
     return (
         <>
             <Banner title={"Web Development"} txt={"Get to know about OnSprint Global"}/>
-            <div className={"container"}>
+            <div className={"container-fluid col-md-8 col-10"}>
                 <div className={"py-xl-5 my-5"}>
                     <div className={"row"}>
                         {servicesWeb.map((data, index) => <div key={index + "Services"} className={"col-md-4"}>
