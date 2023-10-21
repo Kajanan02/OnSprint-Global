@@ -1,6 +1,6 @@
 import React from "react";
 
-function Banner({ title, txt,className="banner-head" }) {
+function Banner({ title, txt,className="banner" }) {
   return (
     <div className={"gap-2 " + className}>
       <div className="banner-text container-fluid col-10 col-md-9 col-xl-8 p-0 ">

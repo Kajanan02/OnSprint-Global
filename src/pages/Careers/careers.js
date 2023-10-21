@@ -6,7 +6,7 @@ function careers() {
   return (
     <>
       <Banner
-        className={"banner-head"}
+        className={"banner banner-career"}
         title={"Careers Page"}
         txt={"Start your career at OnSprint Global"}
       />

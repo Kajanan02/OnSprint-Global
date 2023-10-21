@@ -6,11 +6,15 @@ import headerImg from "../../assets/Data analyse.png";
 function Header(props) {
   return (
     <header className={"bg-navbar"}>
-      <div className="container-fluid col-10 col-md-9 col-xl-8 p-0 mt-0 mt-md-4 align-items-center">
-        <Row className="justify-content-between align-items-center gap-md-0 gap-4">
-          <Col md={6} xs={12}>
+      <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
+        <Row className="justify-content-between align-items-center mt-4 mt-md-0 gap-md-0 gap-4">
+          <Col
+            md={12}
+            xs={12}
+            className="text-center justify-content-center align-items-center"
+          >
             <p className="mb-3 header-parah">Who We Are</p>
-            <h1 className="display-5 fw-bold">
+            <h1 className="display-3 fw-bold">
               We <span className="header-highlight">Build & Design</span> Great
               Technology For Your Business
             </h1>
@@ -20,7 +24,7 @@ function Header(props) {
               extend your in-house team or need assistance with developing,
               quality assuring, or supporting your application, we can help.
             </p>
-            <div className="d-flex flex-md-nowrap flex-wrap gap-3">
+            <div className="d-flex flex-md-nowrap flex-wrap gap-3 justify-content-center align-items-center">
               <Button
                 variant="primary"
                 className="header-btn"
@@ -41,9 +45,9 @@ function Header(props) {
               </Button>
             </div>
           </Col>
-          <Col md={6} xs={12}>
+          {/* <Col md={6} xs={12}>
             <Image src={headerImg} fluid alt="header-img" />
-          </Col>
+          </Col> */}
         </Row>
       </div>
     </header>

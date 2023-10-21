@@ -38,7 +38,7 @@ function Navbars() {
 
 
   return (
-    <Navbar expand={"xl"} sticky="top" className={"py-4 " +(navScroll ?  "bg-white shadow" : location.pathname === "/"? "bg-navbar" :"bg-white")}>
+    <Navbar expand={"xl"} sticky="top" className={"py-3 " +(navScroll ?  "navbar-bg" : location.pathname === "/"? "bg-navbar" :"navbar-bg")}>
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
         {/* logo */}
         <Navbar.Brand as={Link} to={"/"}>
@@ -50,6 +50,7 @@ function Navbars() {
           />
         </Navbar.Brand>
         {/* menu open button */}
+        
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${"xl"}`}
           className="shadow-none border-0"
