@@ -10,11 +10,13 @@ import Contact from './pages/Contact/Contact';
 import Navbar from './components/Navbars';
 import Footer from './components/Footer';
 import WebDevelopment from "./pages/services/web-development";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
     return (
         <>
             <Navbar/>
+            <ScrollToTop />
             <Routes>
                 <Route path='/' Component={Home}/>
                 <Route path='/services' Component={Services}/>

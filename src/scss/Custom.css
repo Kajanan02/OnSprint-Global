@@ -11411,6 +11411,11 @@ textarea.form-control-lg {
   padding-bottom: 7.5rem !important;
 }
 
+.px-6 {
+  padding-left: 7.5rem !important;
+  padding-right: 7.5rem !important;
+}
+
 @media (max-width: 768px) {
   .mt-6 {
     margin-top: 4rem !important;
@@ -11431,6 +11436,10 @@ textarea.form-control-lg {
   .py-6 {
     padding-top: 3.5rem !important;
     padding-bottom: 3.5rem !important;
+  }
+  .px-6 {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
   }
 }
 
