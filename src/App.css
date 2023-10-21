@@ -159,7 +159,7 @@ header {
       rgba(3, 36, 128, 0.4) 70%,
       rgba(0, 68, 255, 0) 100%
     ),
-    url("../src/assets/about-bg.jpg");
+    url("../src/assets/about-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
