@@ -9,7 +9,7 @@ import logo from "../assets/OnSprint-global.svg";
 
 function navbar() {
   return (
-    <Navbar expand={"xl"} sticky="top" className="py-4 bg-white">
+    <Navbar expand={"xl"} sticky="top" className="py-4">
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
         {/* logo */}
         <Navbar.Brand as={Link} to={"/"}>

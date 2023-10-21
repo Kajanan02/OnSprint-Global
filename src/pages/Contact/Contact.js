@@ -1,9 +1,15 @@
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
+import Banner from "../../components/banner";
 
 function Contact() {
   return (
     <>
+      <Banner
+        className={"banner-head"}
+        title={"Contact Page"}
+        txt={"Any information call to OnSprint Global"}
+      />
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
         <Row className="py-6 justify-content-between align-items-center">
           <Col xl={4} md={4} sm={12}>
@@ -34,7 +40,7 @@ function Contact() {
           </Col>
 
           <Col xl={7} md={7} sm={12}>
-            <Form >
+            <Form>
               <Form.Group className="mb-4 mt-2">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control type="text" placeholder="Enter Name" />

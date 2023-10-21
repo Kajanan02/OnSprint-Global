@@ -1,14 +1,11 @@
 import React from "react";
-import { Button, Col, Image, Row } from "react-bootstrap";
-import whoweare from "../../assets/web-21.png";
-import howweborn from "../../assets/web-14.png";
+import { Button, Col, Row } from "react-bootstrap";
 import idea from "../../assets/015-idea.png";
 import analysis from "../../assets/033-line bars.png";
 import design from "../../assets/uiux.png";
 import develop from "../../assets/web.png";
-import testing from "../../assets/029-target.png";
 import Banner from "../../components/banner";
-import { Link } from "react-router-dom";
+import WebDevelopProcess from "../services/web-develop-process";
 
 function About() {
   return (
@@ -96,6 +93,7 @@ function About() {
             </Col>
           </Row>
         </div>
+        <WebDevelopProcess />
 
         {/* <Row className="about-we-are pb-5 justify-content-between align-items-center">
           <Col xl={5} md={5} sm={12}>

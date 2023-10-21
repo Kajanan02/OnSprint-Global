@@ -82,9 +82,8 @@ li,
 }
 
 .header-parah {
-  font-size: 1.35rem !important;
   font-weight: 500;
-  max-width: 1000px !important;
+  max-width: 500px !important;
 }
 
 .header-btn {
@@ -102,11 +101,6 @@ header {
   height: calc(100vh - 146px);
   display: flex;
   align-items: center;
-  /* background-color: #ffffff;
-    background-image: radial-gradient(#0044ff2d 0.75px, transparent 0.75px),
-      radial-gradient(#0044ff2d 0.75px, #ffffff 0.75px);
-    background-size: 30px 30px;
-    background-position: 0 0, 15px 15px; */
 }
 
 .card-body {
@@ -123,7 +117,8 @@ header {
   }
 
   header {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
+    height: auto;
   }
 
   .card-body {
