@@ -147,22 +147,18 @@ header {
     max-width: 500px !important;
 }
 
-.banner-head {
+.banner-head,.banner-web {
   height: 400px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
-    ),
-    url("../src/assets/about-bg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, rgb(1, 9, 27, 0.9) 0%, rgba(2, 22, 73, 0.7) 40%, rgba(3, 36, 128, 0.4) 70%, rgba(0, 68, 255, 0) 100%), url("../src/assets/about-bg.webp");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.banner-web{
+    background: linear-gradient(135deg, rgb(1, 9, 27, 0.9) 0%, rgba(2, 22, 73, 0.7) 40%, rgba(3, 36, 128, 0.4) 70%, rgba(0, 68, 255, 0) 100%), url("../src/assets/digi-marketing-bg.webp");
 }
 
 .banner-text {
@@ -290,4 +286,7 @@ button:not(.collapsed) {
   width: 160px;
   margin: 20px;
   background-color: #0044ff25;
+}
+.bg-navbar{
+    background: url("../src/assets/29. Pale Cornflower Blue.png");
 }

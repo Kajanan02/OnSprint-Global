@@ -5,7 +5,7 @@ import headerImg from "../../assets/Data analyse.png";
 
 function Header(props) {
   return (
-    <header>
+    <header className={"bg-navbar"}>
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0 mt-0 mt-md-4 align-items-center">
         <Row className="justify-content-between align-items-center gap-md-0 gap-4">
           <Col md={6} xs={12}>

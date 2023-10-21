@@ -9,7 +9,7 @@ import CtaBanner from "../Home/cta-banner";
 function WebDevelopment(props) {
     return (
         <>
-            <Banner title={"Web Development"} txt={"Get to know about OnSprint Global"}/>
+            <Banner title={"Web Development"} txt={"Get to know about OnSprint Global"} className={"banner-web"}/>
             <div className={"container-fluid col-md-8 col-10"}>
                 <div className={"py-xl-5 my-5"}>
                     <div className={"row"}>

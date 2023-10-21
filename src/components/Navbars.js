@@ -4,12 +4,15 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { Link } from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import logo from "../assets/OnSprint-global.svg";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 
 function Navbars() {
   const [show, setShow] = useState(false);
+  const [navScroll, setNavScroll] = useState(false);
+  const location = useLocation();
+
 
   const toggleOffCanvas = () => {
     if (window.innerWidth > 1200) {
@@ -17,8 +20,25 @@ function Navbars() {
     }
     setShow((show) => !show);
   };
+
+  const controlNavbar = ()=>{
+    if(window.scrollY >100){
+      setNavScroll(true)
+    }else {
+      setNavScroll(false)
+    }
+  }
+  useEffect(()=>{
+    window.addEventListener('scroll',controlNavbar)
+    return()=>{
+      window.removeEventListener('scroll',controlNavbar)
+    }
+
+  },[])
+
+
   return (
-    <Navbar expand={"xl"} sticky="top" className="py-4 bg-white">
+    <Navbar expand={"xl"} sticky="top" className={"py-4 " +(navScroll ?  "bg-white shadow" : location.pathname === "/"? "bg-navbar" :"bg-white")}>
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
         {/* logo */}
         <Navbar.Brand as={Link} to={"/"}>
