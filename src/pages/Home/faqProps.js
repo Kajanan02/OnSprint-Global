@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion } from "react-bootstrap";
+import {Accordion} from "react-bootstrap";
 
 function FaqProps(props) {
   const { question, answer } = props.data;

@@ -5,6 +5,12 @@ import serviceBanner from "../../assets/services-banner.svg";
 import WebDevelopProcess from "./web-develop-process";
 import CtaBanner from "../Home/cta-banner";
 import Banner from "../../components/banner";
+import ServiceCard from "./service-card";
+import {servicesWeb} from "../../utils/content";
+import serviceBanner from "../../assets/services-banner.svg";
+import WebDevelopProcess from "./web-develop-process";
+import CtaBanner from "../Home/cta-banner";
+import Banner from "../../components/banner";
 
 function Services() {
     return (

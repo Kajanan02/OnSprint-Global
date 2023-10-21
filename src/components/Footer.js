@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/OnSprint-global.svg";
-import { Col, Image, Row } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import {Col, Image, Row} from "react-bootstrap";
+import {Link, NavLink} from "react-router-dom";
 
 function Footer() {
   return (
@@ -94,30 +94,30 @@ function Footer() {
                     <span className="material-symbols-rounded text-primary">
                       call
                     </span>
-                    <p>(+94) 701453919</p>
-                  </div>
+                                        <p>(+94) 701453919</p>
+                                    </div>
 
                   <div className="d-flex gap-2 mt-2">
                     <span className="material-symbols-rounded text-primary">
                       mail
                     </span>
-                    <p>onsprintglobal@gmail.com</p>
-                  </div>
+                                        <p>onsprintglobal@gmail.com</p>
+                                    </div>
 
                   <div className="d-flex gap-2 mt-2">
                     <span className="material-symbols-rounded text-primary">
                       location_on
                     </span>
-                    <p>SriLanka</p>
-                  </div>
+                                        <p>SriLanka</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </div>
-    </>
-  );
+            </div>
+        </>
+    );
 }
 
 export default Footer;
