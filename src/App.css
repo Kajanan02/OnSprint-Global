@@ -350,9 +350,9 @@ button:not(.collapsed) {
   margin: 5px;
   background-color: #0044ff25;
 }
-.bg-navbar{
+/* .bg-navbar{
     background: url("../src/assets/29. Pale Cornflower Blue.png");
-}
+} */
 @media (max-width: 768px) {
     .conform {
         margin-top: 10px;
