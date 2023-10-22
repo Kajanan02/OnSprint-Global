@@ -5,7 +5,7 @@ function Blog() {
   return (
     <>
       <Banner
-        className={"banner-head"}
+        className={"banner banner-blog"}
         title={"Blog Page"}
         txt={"Get to know about OnSprint Global"}
       />

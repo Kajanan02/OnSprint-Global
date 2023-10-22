@@ -11,7 +11,7 @@ function About() {
   return (
     <>
       <Banner
-        className={"banner-head"}
+        className={"banner banner-about"}
         title={"Hello there , We are Sprinters"}
         txt={"Get to know about OnSprint Global"}
       />
