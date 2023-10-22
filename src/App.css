@@ -350,12 +350,20 @@ button:not(.collapsed) {
   margin: 5px;
   background-color: #0044ff25;
 }
-
-@media (max-width: 768px) {
-  .technology-card {
-    height: 135px;
-    width: 135px;
-    margin: 5px;
-    background-color: #0044ff25;
-  }
+.bg-navbar{
+    background: url("../src/assets/29. Pale Cornflower Blue.png");
 }
+@media (max-width: 768px) {
+    .conform {
+        margin-top: 10px;
+        width: 100%;
+        /* border-radius: 32px; */
+        margin-left: 0px;
+    }
+    .technology-card{
+        height: 132px;
+        width: 132px;
+        margin: 16px;
+    }
+}
+
