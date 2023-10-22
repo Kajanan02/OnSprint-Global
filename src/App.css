@@ -60,8 +60,11 @@ li,
 
 .navbar-bg {
   backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  overflow: hidden;
   opacity: 1 !important;
   background: rgba(255, 255, 255, 0.25) !important;
+  max-width: 100% !important;
 }
 
 @media (max-width: 768px) {
@@ -274,7 +277,7 @@ button:not(.collapsed) {
 }
 
 .faq-bar {
-  box-shadow: #0044ff25 0px 48px 100px 0px;
+  box-shadow: #0044ff1e 0px 48px 100px 0px;
 }
 
 .accordion-button {
@@ -342,8 +345,17 @@ button:not(.collapsed) {
 }
 
 .technology-card {
-  height: 160px;
-  width: 160px;
-  margin: 20px;
+  height: 150px;
+  width: 150px;
+  margin: 5px;
   background-color: #0044ff25;
+}
+
+@media (max-width: 768px) {
+  .technology-card {
+    height: 135px;
+    width: 135px;
+    margin: 5px;
+    background-color: #0044ff25;
+  }
 }

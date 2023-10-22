@@ -14,7 +14,7 @@ function Header(props) {
             className="text-center justify-content-center align-items-center"
           >
             <p className="mb-3 header-parah">Who We Are</p>
-            <h1 className="display-3 fw-bold">
+            <h1 className="display-2 fw-bold">
               We <span className="header-highlight">Build & Design</span> Great
               Technology For Your Business
             </h1>

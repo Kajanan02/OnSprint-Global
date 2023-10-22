@@ -1,9 +1,10 @@
 import React from "react";
 import { webDevelopProcess } from "../../utils/content";
+import { Col, Row } from "react-bootstrap";
 
 function WebDevelopProcess(props) {
   return (
-    <div className={"py-5"}>
+    <div className={"container-fluid col-md-9 col-xl-9 p-0"}>
       <div className={"pb-5 my-5"}>
         <h1 className={"develop-process-heading"}>
           Trace along the development process
@@ -12,21 +13,24 @@ function WebDevelopProcess(props) {
         </h1>
       </div>
 
-      <div className={"px-xl-5"}>
-        <div className={"row"}>
-          {webDevelopProcess.map((data, index) => (
-            <div className={"col-md-4"} key={index + "web-develop"}>
-              <div className={"px-3 pb-5"}>
-                <h5 className={"develop-process-step"}>Step {index + 1}.</h5>
-                <h2 className={"develop-process-step-heading"}>
-                  {data.heading}
-                </h2>
-                <p className={"develop-process-step-para"}>{data.para}</p>
-              </div>
+      <Row
+        xl={3}
+        md={2}
+        sm={1}
+        xs={1}
+        className={"g-5 justify-content-between align-items-center"}
+      >
+        {webDevelopProcess.map((data, index) => (
+          <Col className={""} key={index + "web-develop"}>
+            <div className={""}>
+              <h5 className={"develop-process-step"}>Step {index + 1}.</h5>
+              <h2 className={"develop-process-step-heading"}>{data.heading}</h2>
+              <p className={"develop-process-step-para"}>{data.para}</p>
             </div>
-          ))}
-        </div>
-      </div>
+          </Col>
+        ))}
+      </Row>
+
       <div className={"my-5 py-5"}>
         <div className={"text-center"}>TECHNOLOGIES</div>
         <h1 className={"develop-process-heading"}>
@@ -35,18 +39,27 @@ function WebDevelopProcess(props) {
           the following stacks.
         </h1>
 
-        <div className={"px-xl-5 mx-xl-5"}>
-          <div
+        <div>
+          <Row
+            xl={4}
+            md={4}
+            sm={2}
+            xs={2}
             className={
-              "px-xl-5 mx-xl-5 mt-5 d-flex flex-wrap justify-content-center p-md-2 p-sm-2 p-xs-2 m-md-2 tech"
+              "g-md-4 g-4 justify-content-between align-items-center mt-3"
             }
           >
             {Array(12)
               .fill(0)
               .map((data, index) => (
-                <div className={"technology-card"} key={index + "techno"} />
+                <Col className="justify-content-between align-items-center">
+                  <div
+                    className={"technology-card"}
+                    key={index + "techno"}
+                  ></div>
+                </Col>
               ))}
-          </div>
+          </Row>
         </div>
       </div>
     </div>
