@@ -14,7 +14,7 @@ function Services() {
         txt={"Get to know about OnSprint Global"}
       />
 
-      <div className={"container-fluid col-md-8 col-10"}>
+      <div className={"container"}>
         <div className={"py-xl-5 my-5"}>
           <div className={"row"}>
             {servicesWeb.map((data, index) => (
