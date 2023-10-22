@@ -10,7 +10,7 @@ function WebDevelopment(props) {
     return (
         <>
             <Banner title={"Web Development"} txt={"Get to know about OnSprint Global"} className={"banner-web"}/>
-            <div className={"container-fluid col-md-8 col-10"}>
+            <div className={"container"}>
                 <div className={"py-xl-5 my-5"}>
                     <div className={"row"}>
                         {servicesWeb.map((data, index) => <div key={index + "Services"} className={"col-md-4"}>
@@ -26,9 +26,9 @@ function WebDevelopment(props) {
                         </div>
                         <div className={"col-md-6"}>
 
-                            <div className={"service-content-text"}>What we do</div>
-                            <div className={"service-content-heading"}>Empowering Innovation and Transformation</div>
-                            <div>
+                            <div className={"service-content-text ps-3"}>What we do</div>
+                            <div className={"service-content-heading ps-3"}>Empowering Innovation and Transformation</div>
+                            <div className={"ps-3"}>
                                 <p className={"service-content-text"}>Welcome to OnSprint Global! We are on a mission to
                                     shape the future through inventive solutions and transformative technologies that
                                     push the boundaries of what's possible.</p>
