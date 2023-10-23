@@ -52,6 +52,7 @@ li,
   border: none;
   box-shadow: rgba(60, 83, 255, 0.1) 0px 48px 100px 0px;
   padding: 1em 2em;
+  z-index: 5 !important;
 }
 
 .dropdown-toggle::after {
@@ -63,7 +64,7 @@ li,
   -webkit-backdrop-filter: blur(25px) !important;
   overflow: hidden;
   opacity: 1 !important;
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
   max-width: 100% !important;
 }
 
@@ -91,8 +92,8 @@ li,
 }
 
 .header-parah {
-  font-weight: 500;
-  max-width: 800px !important;
+  font-size: 20px !important;
+  max-width: 850px !important;
   margin: auto;
 }
 
@@ -347,23 +348,38 @@ button:not(.collapsed) {
 .technology-card {
   height: 150px;
   width: 150px;
-  margin: 5px;
-  background-color: #0044ff25;
-}
-/* .bg-navbar{
-    background: url("../src/assets/29. Pale Cornflower Blue.png");
-} */
-@media (max-width: 768px) {
-    .conform {
-        margin-top: 10px;
-        width: 100%;
-        /* border-radius: 32px; */
-        margin-left: 0px;
-    }
-    .technology-card{
-        height: 132px;
-        width: 132px;
-        margin: 16px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7faff;
 }
 
+.tech-icon {
+  padding: 0 7.5em !important;
+}
+
+@media (max-width: 768px) {
+  .conform {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .technology-card {
+    height: 132px;
+    width: 132px;
+  }
+
+  .tech-icon {
+    padding: 0 1.5em !important;
+  }
+}
+
+.card {
+  max-width: 360px !important;
+}
+
+.card-body {
+  min-height: auto !important;
+  max-width: 350px;
+}
