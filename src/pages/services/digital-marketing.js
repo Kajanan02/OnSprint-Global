@@ -1,20 +1,17 @@
 import React from "react";
 import Banner from "../../components/banner";
-import { servicesWeb } from "../../utils/content";
-import ServiceCard from "./service-card";
-import serviceBanner from "../../assets/services-banner.svg";
 import DevelopProcess from "./develop-process";
 import CtaBanner from "../Home/cta-banner";
 
-function WebDevelopment(props) {
+function digitalMarketing(props) {
   return (
     <>
       <Banner
-        title={"Web Development"}
+        title={"Digital Markrting"}
         txt={"Get to know about OnSprint Global"}
         className={"banner banner-web"}
       />
-      <div className={"container-fluid col-10 col-md-9 col-xl-8 p-0"}>
+      {/* <div className={"container-fluid col-10 col-md-9 col-xl-8 p-0"}>
         <div className={"py-xl-5 my-5"}>
           <div className={"row"}>
             {servicesWeb.map((data, index) => (
@@ -63,11 +60,11 @@ function WebDevelopment(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <DevelopProcess />
       <CtaBanner />
     </>
   );
 }
 
-export default WebDevelopment;
+export default digitalMarketing;

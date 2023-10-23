@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, Col, Image, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import headerImg from "../../assets/Data analyse.png";
+// import headerImg from "../../assets/Data analyse.png";
 
 function Header(props) {
   return (

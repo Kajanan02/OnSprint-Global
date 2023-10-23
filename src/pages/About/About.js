@@ -5,7 +5,7 @@ import analysis from "../../assets/033-line bars.png";
 import design from "../../assets/uiux.png";
 import develop from "../../assets/web.png";
 import Banner from "../../components/banner";
-import WebDevelopProcess from "../services/web-develop-process";
+import DevelopProcess from "../services/develop-process";
 
 function About() {
   return (
@@ -93,41 +93,8 @@ function About() {
             </Col>
           </Row>
         </div>
-        <WebDevelopProcess />
-
-        {/* <Row className="about-we-are pb-5 justify-content-between align-items-center">
-          <Col xl={5} md={5} sm={12}>
-            <Image src={whoweare} fluid width={500} alt="aboutimg" />
-          </Col>
-          <Col xl={6} md={6} sm={12}>
-            <h2>Who We Are</h2>
-            <p className="mt-3">
-              OnSprint Global based in Sri Lanka offering web design, SEO, PPC,
-              and social media marketing services to all types of businesses all
-              around the world for over 5+ years. We have a team of digital
-              experts that go above and beyond to give quality service to our
-              clients and help them take their business to the next level
-              online.
-            </p>
-          </Col>
-        </Row>
-        <Row className="about-how-born pb-5 justify-content-between align-items-center">
-          <Col xl={6} md={6} sm={12}>
-            <h2>How We Born</h2>
-            <p className="mt-3">
-              OnSprint Global based in Sri Lanka offering web design, SEO, PPC,
-              and social media marketing services to all types of businesses all
-              around the world for over 5+ years. We have a team of digital
-              experts that go above and beyond to give quality service to our
-              clients and help them take their business to the next level
-              online.
-            </p>
-          </Col>
-          <Col xl={5} md={5} sm={12}>
-            <Image src={howweborn} fluid width={500} alt="howweborn" />
-          </Col>
-        </Row> */}
       </div>
+      <DevelopProcess />
     </>
   );
 }
