@@ -16,6 +16,8 @@ import seoOptimaization from "./pages/services/seo-optimaization";
 import appDevelopment from "./pages/services/app-development";
 import contentWriting from "./pages/services/content-writing";
 import ScrollToTop from "./utils/ScrollToTop";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -36,6 +38,7 @@ function App() {
         <Route path="/blog" Component={Blog} />
         <Route path="/contact" Component={Contact} />
       </Routes>
+        <ToastContainer />
       <Footer />
     </>
   );

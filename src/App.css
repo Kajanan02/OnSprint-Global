@@ -268,12 +268,11 @@ header {
 
 button:not(.collapsed) {
   border: 0 !important;
-  border-color: none !important;
 }
 
 .accordion-button:focus {
   box-shadow: none !important;
-  border-color: none !important;
+  border: none !important;
 }
 
 .faq {
@@ -322,6 +321,7 @@ button:not(.collapsed) {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  display: none;
 }
 
 .service-content-text {
@@ -378,10 +378,31 @@ button:not(.collapsed) {
   .tech-icon {
     padding: 0 1.5em !important;
   }
+  .service-card-para{
+    line-height: 20px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+  }
+  .service-card-para-visible{
+    overflow: visible;
+    -webkit-line-clamp: inherit;
+  }
+  .service-card-more-details{
+    display: block;
+  }
 }
 
 .card {
   max-width: 360px !important;
+}
+.loader{
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top: 50%;
 }
 
 .card-body {

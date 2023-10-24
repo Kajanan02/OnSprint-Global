@@ -1,7 +1,7 @@
 import React from "react";
 // import Button from 'react-bootstrap/Button';
 import Card from "react-bootstrap/Card";
-import { Button, Col, Row } from "react-bootstrap";
+import {  Col, Row } from "react-bootstrap";
 import Banner from "../../components/banner";
 import blogImg from "../../assets/writing-bg.webp";
 import CtaBanner from "../../components/cta-banner";
