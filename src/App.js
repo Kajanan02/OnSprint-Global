@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import "./scss/Custom.scss";
 import "./App.css";
 import Home from "./pages/Home/Home";
@@ -9,39 +9,40 @@ import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import Navbar from "./components/Navbars";
 import Footer from "./components/Footer";
-import webDevelopment from "./pages/services/web-development";
-import digitalMarketing from "./pages/services/digital-marketing";
-import uiuxDesigning from "./pages/services/ui-ux-designing";
-import seoOptimaization from "./pages/services/seo-optimaization";
-import appDevelopment from "./pages/services/app-development";
-import contentWriting from "./pages/services/content-writing";
+import WebDevelopment from "./pages/services/web-development";
+import DigitalMarketing from "./pages/services/digital-marketing";
+import UiuxDesigning from "./pages/services/ui-ux-designing";
+import SeoOptimaization from "./pages/services/seo-optimaization";
+import AppDevelopment from "./pages/services/app-development";
+import ContentWriting from "./pages/services/content-writing";
 import ScrollToTop from "./utils/ScrollToTop";
-import { ToastContainer, toast } from 'react-toastify';
+import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "react-animate-on-scroll";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/services" Component={Services} />
-        <Route path="/about" Component={About} />
-        <Route path="/career" Component={Careers} />
-        <Route path="/web-development" Component={webDevelopment} />
-        <Route path="/digital-marketing" Component={digitalMarketing} />
-        <Route path="/ui-ux-design" Component={uiuxDesigning} />
-        <Route path="/seo-optimization" Component={seoOptimaization} />
-        <Route path="/app-development" Component={appDevelopment} />
-        <Route path="/content-writing" Component={contentWriting} />
-        <Route path="/blog" Component={Blog} />
-        <Route path="/contact" Component={Contact} />
-      </Routes>
-        <ToastContainer />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navbar/>
+            <ScrollToTop/>
+            <Routes>
+                <Route path="/" Component={Home}/>
+                <Route path="/services" Component={Services}/>
+                <Route path="/about" Component={About}/>
+                <Route path="/career" Component={Careers}/>
+                <Route path="/web-development" Component={WebDevelopment}/>
+                <Route path="/digital-marketing" Component={DigitalMarketing}/>
+                <Route path="/ui-ux-design" Component={UiuxDesigning}/>
+                <Route path="/seo-optimization" Component={SeoOptimaization}/>
+                <Route path="/app-development" Component={AppDevelopment}/>
+                <Route path="/content-writing" Component={ContentWriting}/>
+                <Route path="/blog" Component={Blog}/>
+                <Route path="/contact" Component={Contact}/>
+            </Routes>
+            <ToastContainer/>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;
