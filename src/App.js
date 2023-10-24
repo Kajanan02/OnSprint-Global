@@ -18,7 +18,6 @@ import ContentWriting from "./pages/services/content-writing";
 import ScrollToTop from "./utils/ScrollToTop";
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import "react-animate-on-scroll";
 
 function App() {
     return (

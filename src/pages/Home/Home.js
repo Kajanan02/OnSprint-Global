@@ -6,13 +6,13 @@ import Header from "./header";
 import CtaBanner from "../../components/cta-banner";
 import ServicesHome from "./services-home";
 import Faq from "./faq";
-import ScrollAnimation from 'react-animate-on-scroll';
+import Reveal from 'react-reveal/Reveal';
 
 function Home() {
     return (
         <>
             <Header/>
-            <ScrollAnimation animateIn="fadeIn">
+            <Reveal effect="fadeInUp">
                 <div className="establish bg-light">
                     <div className="container-fluid col-10 col-md-9 col-xl-8 px-0 py-6 align-items-center">
                         <Row className="justify-content-between align-items-center gap-md-0 gap-2">
@@ -57,16 +57,16 @@ function Home() {
                         </Row>
                     </div>
                 </div>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn">
+            </Reveal>
+            <Reveal effect="fadeInUp">
                 <ServicesHome/>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn">
+            </Reveal>
+            <Reveal effect="fadeInUp">
                 <Faq/>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn">
+            </Reveal>
+            <Reveal effect="fadeInUp">
                 <CtaBanner/>
-            </ScrollAnimation>
+            </Reveal>
         </>
     );
 }
