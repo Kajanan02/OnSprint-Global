@@ -1,7 +1,11 @@
 import React from "react";
 import Banner from "../../components/banner";
 import DevelopProcess from "./develop-process";
-import CtaBanner from "../Home/cta-banner";
+import CtaBanner from "../../components/cta-banner";
+import { Col, Row } from "react-bootstrap";
+import ServiceCard from "./service-card";
+import serviceBanner from "../../assets/services-banner.svg";
+import { servicesMarketing } from "../../utils/content";
 
 function digitalMarketing(props) {
   return (
@@ -11,15 +15,15 @@ function digitalMarketing(props) {
         txt={"Get to know about OnSprint Global"}
         className={"banner banner-web"}
       />
-      {/* <div className={"container-fluid col-10 col-md-9 col-xl-8 p-0"}>
+      <div className={"container-fluid col-10 col-md-9 col-xl-8 p-0"}>
         <div className={"py-xl-5 my-5"}>
-          <div className={"row"}>
-            {servicesWeb.map((data, index) => (
-              <div key={index + "Services"} className={"col-md-4"}>
+          <Row className={"flex-column"}>
+            {servicesMarketing.map((data, index) => (
+              <Col key={index + "Services"}>
                 <ServiceCard data={data} />
-              </div>
+              </Col>
             ))}
-          </div>
+          </Row>
         </div>
 
         <div className={"py-xl-5 my-xl-5 pb-5"}>
@@ -28,7 +32,7 @@ function digitalMarketing(props) {
               <img
                 src={serviceBanner}
                 alt={"serviceBanner"}
-                className={"w-100"}
+                className={"img-fluid"}
               />
             </div>
             <div className={"col-md-6"}>
@@ -60,7 +64,7 @@ function digitalMarketing(props) {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <DevelopProcess />
       <CtaBanner />
     </>

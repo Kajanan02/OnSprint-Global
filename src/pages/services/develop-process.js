@@ -7,9 +7,7 @@ function DevelopProcess(props) {
     <div className={"container-fluid col-10 col-md-9 col-xl-8 p-0"}>
       <div className={"pb-5 my-5"}>
         <h1 className={"develop-process-heading"}>
-          Trace along the development process
-          <br />
-          of your Minimum Viable Product.
+          Bringing Your Digital Dreams to Life is <br /> Our usual Step Process
         </h1>
       </div>
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import headerImg from "../../assets/Data analyse.png";
 
 function Header(props) {
   return (
@@ -19,10 +18,11 @@ function Header(props) {
               Technology For Your Business
             </h1>
             <p className="mt-md-3 mb-5 header-parah">
-              OnSprint Glogal builds and manages high-performing software
-              development teams to bring big ideas to life. Whether you want to
-              extend your in-house team or need assistance with developing,
-              quality assuring, or supporting your application, we can help.
+              At OnSprint Glogal, we specialize in crafting digital experiences
+              that resonate with your audience. With a blend of creativity,
+              technology, and expertise, we offer a comprehensive suite of IT
+              services designed to elevate your online presence and boost your
+              business.we are your one-stop solution for all your digital needs.
             </p>
             <div className="d-flex flex-md-nowrap flex-wrap gap-3 justify-content-center align-items-center">
               <Button
@@ -45,9 +45,6 @@ function Header(props) {
               </Button>
             </div>
           </Col>
-          {/* <Col md={6} xs={12}>
-            <Image src={headerImg} fluid alt="header-img" />
-          </Col> */}
         </Row>
       </div>
     </header>

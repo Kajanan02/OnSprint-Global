@@ -8,7 +8,7 @@ function Contact() {
       <Banner
         className={"banner banner-contact"}
         title={"Contact Page"}
-        txt={"Any information call to OnSprint Global"}
+        txt={"Any information feel free and call to OnSprint Global"}
       />
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
         <Row className="py-6 justify-content-between align-items-center">

@@ -4,7 +4,8 @@ import { servicesWeb } from "../../utils/content";
 import ServiceCard from "./service-card";
 import serviceBanner from "../../assets/services-banner.svg";
 import DevelopProcess from "./develop-process";
-import CtaBanner from "../Home/cta-banner";
+import CtaBanner from "../../components/cta-banner";
+import { Col, Row } from "react-bootstrap";
 
 function WebDevelopment(props) {
   return (
@@ -16,13 +17,13 @@ function WebDevelopment(props) {
       />
       <div className={"container-fluid col-10 col-md-9 col-xl-8 p-0"}>
         <div className={"py-xl-5 my-5"}>
-          <div className={"row"}>
+          <Row className={"flex-column"}>
             {servicesWeb.map((data, index) => (
-              <div key={index + "Services"} className={"col-md-4"}>
+              <Col className="p-0" key={index + "Services"}>
                 <ServiceCard data={data} />
-              </div>
+              </Col>
             ))}
-          </div>
+          </Row>
         </div>
 
         <div className={"py-xl-5 my-xl-5 pb-5"}>
@@ -31,7 +32,7 @@ function WebDevelopment(props) {
               <img
                 src={serviceBanner}
                 alt={"serviceBanner"}
-                className={"w-100"}
+                className={"img-fluid"}
               />
             </div>
             <div className={"col-md-6"}>

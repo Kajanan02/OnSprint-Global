@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../components/banner";
 import { Alert } from "react-bootstrap";
+import CtaBanner from "../../components/cta-banner";
 
 function careers() {
   return (
@@ -17,6 +18,7 @@ function careers() {
           </Alert.Heading>
         </Alert>
       </div>
+      <CtaBanner />
     </>
   );
 }
