@@ -6,13 +6,15 @@ import design from "../../assets/uiux.png";
 import develop from "../../assets/web.png";
 import Banner from "../../components/banner";
 import DevelopProcess from "../services/develop-process";
+import CtaBanner from "../../components/cta-banner";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
     <>
       <Banner
         className={"banner banner-about"}
-        title={"Hello there , We are Sprinters"}
+        title={"About Page"}
         txt={"Get to know about OnSprint Global"}
       />
       <div className="container-fluid col-10 col-md-9 col-xl-8 p-0">
@@ -28,16 +30,18 @@ function About() {
                 We Work As a Team And Provide Quality Product What You Want
               </h2>
               <p className="mt-2 mb-4">
-                OnSprint Global based in Sri Lanka offering web design, SEO,
-                PPC, and social media marketing services to all types of
-                businesses all around the world for over 5+ years. We have a
-                team of digital experts that go above and beyond to give quality
-                service to our clients and help them take their business to the
-                next level online.
+                OnSprint Global based in Sri Lanka offering itcservices to all
+                types of businesses.we take pride in our well-defined and
+                effective methodology that ensures your IT projects are not only
+                successful but also a seamless experience. Here's an in-depth
+                look at how we work:
               </p>
+
               <Button
-                variant="primary"
-                className="service-btn d-flex align-items-center px-3 rounded-5 py-2"
+                variant="btn btn-primary"
+                className="d-flex w-auto justify-content-center align-items-center service-btn"
+                as={Link}
+                to={"/services"}
               >
                 More Details{" "}
                 <span className="material-symbols-rounded">chevron_right</span>
@@ -52,40 +56,41 @@ function About() {
                 <Col>
                   <div className="work-type">
                     <img src={idea} alt="idea" className="stage-img" />
-                    <h5 className="my-2">Ideation</h5>
+                    <h5 className="mb-2 mt-3">Ideation</h5>
                     <p>
-                      Get idea about what type of product is and start to next
-                      step
+                      This stage is all about listening to your vision ,We
+                      encourage you to share your ideas and understanding your
+                      objectives.
                     </p>
                   </div>
                 </Col>
                 <Col>
                   <div className="work-type">
                     <img src={analysis} alt="analysis" className="stage-img" />
-                    <h5 className="my-2">Analysis</h5>
+                    <h5 className="mb-2 mt-3">Analysis</h5>
                     <p>
-                      Get idea about what type of product is and start to next
-                      step
+                      This phase helps us refine your project's objectives,
+                      establish timelines, and set realistic expectations.
                     </p>
                   </div>
                 </Col>
                 <Col>
                   <div className="work-type">
                     <img src={design} alt="design" className="stage-img" />
-                    <h5 className="my-2">Design</h5>
+                    <h5 className="mb-2 mt-3">Design</h5>
                     <p>
-                      Get idea about what type of product is and start to next
-                      step
+                      Our talented designers work their magic to create visually
+                      appealing and user-friendly solutions.
                     </p>
                   </div>
                 </Col>
                 <Col>
                   <div className="work-type">
                     <img src={develop} alt="develop" className="stage-img" />
-                    <h5 className="my-2">Develop</h5>
+                    <h5 className="mb-2 mt-3">Develop</h5>
                     <p>
-                      Get idea about what type of product is and start to next
-                      step
+                      Our skilled developers crafting the functionalities,
+                      features, and coding that make your project unique.
                     </p>
                   </div>
                 </Col>
@@ -95,6 +100,7 @@ function About() {
         </div>
       </div>
       <DevelopProcess />
+      <CtaBanner />
     </>
   );
 }

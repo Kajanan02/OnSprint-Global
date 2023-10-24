@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/OnSprint-global.svg";
-import {Col, Image, Row} from "react-bootstrap";
-import {Link, NavLink} from "react-router-dom";
+import { Col, Image, Row } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -25,16 +25,32 @@ function Footer() {
                   to={"/"}
                 />
                 <p className="mt-3 footer-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
+                  we specialize in crafting digital experiences With a blend of
+                  creativity, technology, and expertise, we offer a IT services
+                  designed to elevate your online presence and boost your
+                  business.
                 </p>
                 <div className="d-flex gap-2 mt-2">
-                  <i className="fab fa-instagram fa-fw fa-1x text-dark me-1"></i>
-                  <i className="fab fa-whatsapp fa-fw fa-1x text-dark me-1"></i>
-                  <i className="fab fa-youtube fa-fw fa-1x text-dark me-1"></i>
-                  <i className="fab fa-linkedin fa-fw fa-1x text-dark me-1"></i>
-                  <i className="fab fa-twitter fa-fw fa-1x text-dark me-1"></i>
+                  <NavLink
+                    as={Link}
+                    to={"https://www.instagram.com/onsprint.global/"}
+                  >
+                    <i className="fa-brands fa-instagram fa-fw fa-2x me-1"></i>
+                  </NavLink>
+                  <NavLink
+                    as={Link}
+                    to={"https://wa.me/message/5AW6IJJUSPSTJ1"}
+                  >
+                    <i className="fa-brands fa-whatsapp fa-fw fa-2x me-1"></i>
+                  </NavLink>
+                  <NavLink
+                    as={Link}
+                    to={
+                      "https://www.linkedin.com/company/onsprint/?viewAsMember=true"
+                    }
+                  >
+                    <i className="fa-brands fa-linkedin fa-fw fa-2x me-1"></i>
+                  </NavLink>
                 </div>
               </div>
             </Col>
@@ -81,6 +97,9 @@ function Footer() {
                     <NavLink as={Link} to={"/blog"}>
                       Blog
                     </NavLink>
+                    <NavLink as={Link} to={"/contact"}>
+                      Contact us
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -90,34 +109,47 @@ function Footer() {
               <div className="text-start px-2 py-3">
                 <div className="description">
                   <h5 className="fw-bold mb-3">Contact</h5>
+
                   <div className="d-flex gap-2">
                     <span className="material-symbols-rounded text-primary">
                       call
                     </span>
-                                        <p>(+94) 701453919</p>
-                                    </div>
+                    <NavLink
+                      as={Link}
+                      to={"https://wa.me/message/5AW6IJJUSPSTJ1"}
+                    >
+                      <p>(+94) 701453919</p>
+                    </NavLink>
+                  </div>
 
                   <div className="d-flex gap-2 mt-2">
                     <span className="material-symbols-rounded text-primary">
                       mail
                     </span>
-                                        <p>onsprintglobal@gmail.com</p>
-                                    </div>
+                    <NavLink
+                      as={Link}
+                      to={
+                        "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGKnSkCvmpVtXNVtVjNlZkKXrlLLGSbvhMpPSHQhCblRhkRbgpbDJvwLjqKKkvgffWxNflX"
+                      }
+                    >
+                      <p>onsprintglobal@gmail.com</p>
+                    </NavLink>
+                  </div>
 
                   <div className="d-flex gap-2 mt-2">
                     <span className="material-symbols-rounded text-primary">
                       location_on
                     </span>
-                                        <p>SriLanka</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
+                    <p>SriLanka</p>
+                  </div>
                 </div>
-            </div>
-        </>
-    );
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Footer;
