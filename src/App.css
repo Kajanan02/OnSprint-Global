@@ -70,7 +70,6 @@ li,
   opacity: 1 !important;
   background: rgba(255, 255, 255, 0.8) !important;
   max-width: 100% !important;
-  overflow: hidden !important;
 }
 
 @media (max-width: 768px) {
