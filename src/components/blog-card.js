@@ -11,7 +11,7 @@ function BlogCard(props) {
   }
 
   return (
-    <Card className="border-0 cursor-pointer" onClick={expanding}>
+    <Card className="border-0" >
       <Card.Img variant="top" className="rounded-4 img-fluid" src={blogImg} />
       <Card.Body className="p-0 mt-3">
         <Card.Title className="fs-5 fw-bold">{heading}</Card.Title>
@@ -23,6 +23,7 @@ function BlogCard(props) {
           >
             {para}
           </p>
+          <div className={"text-black fw-semibold cursor-pointer"} onClick={expanding}>{expand ? "Less":"More"} ></div>
         </Card.Text>
       </Card.Body>
     </Card>
