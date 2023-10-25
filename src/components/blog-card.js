@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import blogImg from "../assets/writing-bg.webp";
 
 function BlogCard(props) {
   const { heading, para, blogImg } = props.data;
