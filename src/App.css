@@ -1,59 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  font-family: "DM Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 p,
 li,
 .accordion-body {
-  font-family: "DM Sans", sans-serif;
-  color: #9298a7;
-  letter-spacing: 0.35px !important;
+    font-family: "DM Sans", sans-serif;
+    color: #9298a7;
+    letter-spacing: 0.35px !important;
 }
 
 .btn {
-  padding: 0.75em 1.5em !important;
-  border-radius: 2em !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
+    padding: 0.75em 1.5em !important;
+    border-radius: 2em !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
 }
 
 .navbar-expand-xl .navbar-nav .nav-link {
-  color: #9298a7 !important;
+    color: #9298a7 !important;
 }
 
 .dropdown-item {
-  color: #9298a7 !important;
-  font-size: 0.9rem;
-  margin: 1em 0;
+    color: #9298a7 !important;
+    font-size: 0.9rem;
+    margin: 1em 0;
 }
 
 .navbar-expand-xl .navbar-nav .nav-link,
 .navbar-expand-xl .navbar-nav .btn {
-  margin: 0 1.75em;
-  font-size: 0.9rem;
+    margin: 0 1.75em;
+    font-size: 0.9rem;
 }
 
 .navbar-nav .btn {
-  padding: 0.75em 1.5em;
+    padding: 0.75em 1.5em;
 }
 
 .navbar-expand-xl .navbar-nav .dropdown-menu {
-  margin-top: 1.75em;
-  border: none;
-  box-shadow: rgba(60, 83, 255, 0.1) 0px 48px 100px 0px;
-  padding: 1em 2em;
-  z-index: 5 !important;
+    margin-top: 1.75em;
+    border: none;
+    box-shadow: rgba(60, 83, 255, 0.1) 0px 48px 100px 0px;
+    padding: 1em 2em;
+    z-index: 5 !important;
 }
 
 /* .dropdown-toggle::after {
@@ -65,420 +65,425 @@ li,
 } */
 
 .navbar-bg {
-  backdrop-filter: blur(25px) !important;
-  -webkit-backdrop-filter: blur(25px) !important;
-  opacity: 1 !important;
-  background: rgba(255, 255, 255, 0.8) !important;
-  max-width: 100% !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    opacity: 1 !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    max-width: 100% !important;
 }
 
 @media (max-width: 768px) {
-  .navbar-nav {
-    margin-top: 6em !important;
-  }
+    .navbar-nav {
+        margin-top: 6em !important;
+    }
 
-  .navbar-nav .btn {
-    font-size: 21px !important;
-    padding: 1em 1.5em !important;
-    font-weight: 500;
-  }
+    .navbar-bg {
+        overflow: hidden;
+    }
 
-  .nav-link {
-    margin: 1em 0 !important;
-    font-size: 24px;
-    font-weight: 500;
-  }
+    .navbar-nav .btn {
+        font-size: 21px !important;
+        padding: 1em 1.5em !important;
+        font-weight: 500;
+    }
+
+    .nav-link {
+        margin: 1em 0 !important;
+        font-size: 24px;
+        font-weight: 500;
+    }
 }
 
 .header-highlight {
-  color: #0044ff;
+    color: #0044ff;
 }
 
 .header-parah {
-  font-size: 20px !important;
-  max-width: 850px !important;
-  margin: auto;
+    font-size: 20px !important;
+    max-width: 850px !important;
+    margin: auto;
 }
 
 .header-btn {
-  padding: 0.75em 2em !important;
-  font-size: 18px !important;
-  font-weight: 500 !important;
-  border-radius: 2em !important;
+    padding: 0.75em 2em !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    border-radius: 2em !important;
 }
 
 header {
-  height: 100vh;
-  padding: 4em 0;
+    height: 100vh;
+    padding: 4em 0;
 }
 
 .bg-navbar {
-  background: url("../src/assets/bg-1.png");
-  background-size: cover;
-  object-fit: cover;
+    background: url("../src/assets/bg-1.png");
+    background-size: cover;
+    object-fit: cover;
 }
 
 .card-body {
-  min-height: 285px !important;
+    min-height: 285px !important;
 }
 
 @media (max-width: 768px) {
-  .who-we-are {
-    margin-bottom: 2em !important;
-  }
+    .who-we-are {
+        margin-bottom: 2em !important;
+    }
 
-  .header-parah {
-    font-size: 1.1rem !important;
-  }
+    .header-parah {
+        font-size: 1.1rem !important;
+    }
 
-  header {
-    margin-bottom: 2em;
-    padding: 1em 0;
-    height: auto;
-  }
+    header {
+        margin-bottom: 2em;
+        padding: 1em 0;
+        height: auto;
+    }
 
-  .card-body {
-    min-height: 250px !important;
-  }
+    .card-body {
+        min-height: 250px !important;
+    }
 }
 
 .service-parah {
-  max-width: 850px;
-  margin: auto;
+    max-width: 850px;
+    margin: auto;
 }
 
 .service-card {
-  box-shadow: #0044ff25 0px 48px 100px 0px;
+    box-shadow: #0044ff25 0px 48px 100px 0px;
 }
 
 .service-btn {
-  max-width: 160px !important;
+    max-width: 160px !important;
 }
 
 .service-card p {
-  font-size: 16px !important;
+    font-size: 16px !important;
 }
 
 .footer-top-text p {
-  max-width: 500px !important;
+    max-width: 500px !important;
 }
 
 .banner {
-  height: 400px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .banner-about {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/about-bg.webp");
 }
 
 .banner-web {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/web-bg.webp");
 }
 
 .banner-marketing {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/digi-marketing-bg.webp");
 }
 
 .banner-designing {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/ui-ux-bg.webp");
 }
 
 .banner-seo {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/seo-bg.webp");
 }
 
 .banner-app {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/app-bg.webp");
 }
 
 .banner-writing {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/writing-bg.webp");
 }
+
 .banner-career {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/carrer-bg.webp");
 }
 
 .banner-blog {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/blog-bg.webp");
 }
 
 .banner-contact {
-  background: linear-gradient(
-      135deg,
-      rgb(1, 9, 27, 0.9) 0%,
-      rgba(2, 22, 73, 0.7) 40%,
-      rgba(3, 36, 128, 0.4) 70%,
-      rgba(0, 68, 255, 0) 100%
+    background: linear-gradient(
+            135deg,
+            rgb(1, 9, 27, 0.9) 0%,
+            rgba(2, 22, 73, 0.7) 40%,
+            rgba(3, 36, 128, 0.4) 70%,
+            rgba(0, 68, 255, 0) 100%
     ),
     url("../src/assets/contact-bg.webp");
 }
 
 .banner-text {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .stage-img {
-  max-width: 60px !important;
+    max-width: 60px !important;
 }
 
 .work-type {
-  max-width: 250px !important;
+    max-width: 250px !important;
 }
 
 .conform {
-  box-shadow: #0044ff25 0px 48px 100px 0px;
+    box-shadow: #0044ff25 0px 48px 100px 0px;
 }
 
 @media (max-width: 768px) {
-  .conform {
-    margin-top: 10px;
-    width: 100%;
-    /* border-radius: 32px; */
-    margin-left: 0px;
-  }
+    .conform {
+        margin-top: 10px;
+        width: 100%;
+        /* border-radius: 32px; */
+        margin-left: 0px;
+    }
 }
 
 .accordion-button:not(.collapsed) {
-  color: white !important;
-  background-color: #0044ff;
+    color: white !important;
+    background-color: #0044ff;
 }
 
 .accordion-item {
-  border: 0 !important;
-  box-shadow: none !important;
-  border-radius: 1.5em !important;
-  margin-bottom: 1.25em !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 1.5em !important;
+    margin-bottom: 1.25em !important;
 }
 
 button:not(.collapsed) {
-  border: 0 !important;
+    border: 0 !important;
 }
 
 .accordion-button:focus {
-  box-shadow: none !important;
-  border: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 .faq {
-  max-width: 1200px !important;
-  margin: auto;
+    max-width: 1200px !important;
+    margin: auto;
 }
 
 .faq-bar {
-  box-shadow: #0044ff1e 0px 48px 100px 0px;
+    box-shadow: #0044ff1e 0px 48px 100px 0px;
 }
 
 .accordion-button {
-  padding: 1.25em 1.5em;
+    padding: 1.25em 1.5em;
 }
 
 .footer a {
-  text-decoration: none !important;
-  color: #9298a7 !important;
+    text-decoration: none !important;
+    color: #9298a7 !important;
 }
 
 .footer-p {
-  max-width: 500px;
+    max-width: 500px;
 }
 
 .services-card {
-  border-radius: 12px;
-  background-color: #f7faff;
-  box-shadow: #0044ff1c 0px 48px 100px 0px;
-  padding: 2em 1.5em !important;
-  margin: 12px;
+    border-radius: 12px;
+    background-color: #f7faff;
+    box-shadow: #0044ff1c 0px 48px 100px 0px;
+    padding: 2em 1.5em !important;
+    margin: 12px;
 }
 
 .service-card-heading {
-  line-height: 1.3;
-  font-weight: 700;
-  margin-bottom: 12px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
 .service-card-para {
-  color: #9298a9;
-  margin-bottom: 12px;
-  letter-spacing: 0.35px;
+    color: #9298a9;
+    margin-bottom: 12px;
+    letter-spacing: 0.35px;
 }
 
 .service-card-more-details {
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  display: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
 }
 
 .service-content-text {
-  color: #9298a9;
+    color: #9298a9;
 }
 
 .service-content-heading {
-  font-size: 32px;
-  color: #202020;
-  font-weight: 700;
+    font-size: 32px;
+    color: #202020;
+    font-weight: 700;
 }
 
 .develop-process-heading {
-  text-align: center;
-  font-weight: 700;
-  padding: 12px;
+    text-align: center;
+    font-weight: 700;
+    padding: 12px;
 }
 
 .develop-process-step {
-  font-size: 1.05em;
-  font-weight: 600;
+    font-size: 1.05em;
+    font-weight: 600;
 }
 
 .develop-process-step-heading {
-  font-weight: 700;
-  line-height: 1.3;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
 .technology-card {
-  height: 150px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f7faff;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7faff;
 }
 
 .tech-icon {
-  padding: 0 7.5em !important;
+    padding: 0 7.5em !important;
 }
 
 @media (max-width: 768px) {
-  .conform {
-    margin-top: 10px;
-    width: 100%;
-    margin-left: 0px;
-  }
+    .conform {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0px;
+    }
 
-  .technology-card {
-    height: 132px;
-    width: 132px;
-  }
+    .technology-card {
+        height: 132px;
+        width: 132px;
+    }
 
-  .tech-icon {
-    padding: 0 1.5em !important;
-  }
+    .tech-icon {
+        padding: 0 1.5em !important;
+    }
 
-  .service-card-para {
+    .service-card-para {
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+        overflow: hidden;
+    }
+
+    .service-card-para-visible {
+        overflow: visible;
+        -webkit-line-clamp: inherit;
+    }
+
+    .service-card-more-details {
+        display: block;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.blog-card-para {
     word-break: break-all;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
     overflow: hidden;
-  }
-
-  .service-card-para-visible {
-    overflow: visible;
-    -webkit-line-clamp: inherit;
-  }
-
-  .service-card-more-details {
-    display: block;
-  }
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.blog-card-para {
-  word-break: break-all;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
-  overflow: hidden;
 }
 
 .blog-card-para-visible {
-  overflow: visible;
-  -webkit-line-clamp: inherit;
+    overflow: visible;
+    -webkit-line-clamp: inherit;
 }
 
 .card {
-  max-width: 360px !important;
+    max-width: 360px !important;
 }
 
 .loader {
-  position: absolute;
-  align-items: center;
-  left: 50%;
-  top: 50%;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 50%;
 }
 
 .card-body {
-  min-height: auto !important;
-  max-width: 350px;
+    min-height: auto !important;
+    max-width: 350px;
 }
