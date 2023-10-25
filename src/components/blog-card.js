@@ -12,7 +12,7 @@ function BlogCard(props) {
 
   return (
     <Card className="border-0" >
-      <Card.Img height={"175px"} variant="top" className="rounded-4 img-fluid" src={require(`../assets/${blogImg}.png`)} />
+      <Card.Img variant="top" className="rounded-4 img-fluid" src={require(`../assets/${blogImg}.png`)} />
 
       <Card.Body className="p-0 mt-3">
         <Card.Title className="fs-5 fw-bold">{heading}</Card.Title>
