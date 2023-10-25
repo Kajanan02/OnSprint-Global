@@ -164,7 +164,7 @@ export const developProcess = [
     },
     {
         heading: "Project Planning",
-        para: "ith a solid understanding of your project's requirements, we embark on project planning. This phase involves setting clear goals, timelines, and milestones. ",
+        para: "With a solid understanding of your project's requirements, we embark on project planning. This phase involves setting clear goals, timelines, and milestones. ",
     },
     {
         heading: " Design and Development",
