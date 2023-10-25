@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import blogImg from "../assets/writing-bg.webp";
 
 function BlogCard(props) {
-  const { heading, para } = props.data;
+  const { heading, para, blogImg } = props.data;
   const [expand, setExpand] = useState(false);
 
   function expanding() {
@@ -12,7 +12,8 @@ function BlogCard(props) {
 
   return (
     <Card className="border-0" >
-      <Card.Img variant="top" className="rounded-4 img-fluid" src={blogImg} />
+      <Card.Img height={"175px"} variant="top" className="rounded-4 img-fluid" src={require(`../assets/${blogImg}.png`)} />
+
       <Card.Body className="p-0 mt-3">
         <Card.Title className="fs-5 fw-bold">{heading}</Card.Title>
         <Card.Text>
